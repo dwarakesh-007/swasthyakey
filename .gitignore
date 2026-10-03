@@ -1,0 +1,7 @@
+node_modules
+dist
+.env.local
+web/public/ocr
+tests/e2e/shots
+tests/e2e/*.png
+tests/e2e/*.jpg

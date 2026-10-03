@@ -1,0 +1,61 @@
+@import '@fontsource-variable/schibsted-grotesk';
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Schibsted Grotesk Variable', ui-sans-serif, system-ui, sans-serif;
+
+  --color-ink: #14213d;
+  --color-ink-2: #3d4a63;
+  --color-ink-3: #66728a;
+  --color-paper: #f6f7f5;
+  --color-surface: #ffffff;
+  --color-line: #dde1e6;
+  --color-line-2: #c6ccd5;
+
+  --color-brass: #946812;
+  --color-brass-deep: #7a540d;
+  --color-brass-soft: #f6ead2;
+
+  --color-go: #1e7b5a;
+  --color-go-soft: #e3f2ea;
+  --color-stop: #b42318;
+  --color-stop-soft: #fdecea;
+  --color-wait: #9a6200;
+  --color-wait-soft: #fff3d6;
+}
+
+@layer base {
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    @apply bg-paper text-ink antialiased;
+    font-feature-settings: 'ss01';
+  }
+  h1, h2, h3 { text-wrap: balance; }
+  p { text-wrap: pretty; }
+  :focus-visible { outline: 3px solid var(--color-brass); outline-offset: 2px; border-radius: 6px; }
+  ::selection { background: var(--color-brass-soft); }
+}
+
+@utility tabular { font-variant-numeric: tabular-nums; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+@keyframes lock-in {
+  from { transform: scale(0.85); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+@keyframes sheet-up {
+  from { transform: translateY(24px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+@keyframes toast-in {
+  from { transform: translateY(-12px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@media print {
+  .no-print { display: none !important; }
+  body { background: white; }
+}

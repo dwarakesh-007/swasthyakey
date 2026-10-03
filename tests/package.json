@@ -1,0 +1,13 @@
+{
+  "name": "swasthyakey-tests",
+  "version": "1.0.0",
+  "scripts": {
+    "backend": "node backend.test.mjs",
+    "e2e": "node e2e/flow.mjs && node e2e/scan.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.63.0"
+  },
+  "private": true,
+  "type": "module"
+}
