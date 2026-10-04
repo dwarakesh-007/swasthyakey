@@ -2,6 +2,8 @@
 
 A patient-held, consent-driven health record. Patients keep their allergies, medicines, conditions and reports on their phone, and share them with a doctor through a **time-limited QR code** that unlocks only the sections they choose. The patient can **revoke access with one tap**, and the doctor's screen locks within a fraction of a second. Every view is logged.
 
+**Live:** https://swasthyakey.vercel.app
+
 Built by team **Shouryangas** (VJIT Hyderabad) for VJ Hackathon 2026, Healthcare PS 3.
 
 ## What it does
